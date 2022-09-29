@@ -1,0 +1,58 @@
+.footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.flex-container-f {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-list {
+    margin-left: 0;
+    padding: 0;
+}
+
+.footer-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: $text-color;
+    text-decoration: none;
+    margin-top: 20px;
+
+    transition: color $animation;   
+}
+
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.paragraph {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.link-footer {
+    display: block;
+    color: $add-color;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24/14);
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+

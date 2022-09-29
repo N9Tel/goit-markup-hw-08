@@ -1,0 +1,48 @@
+.list-contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.link-mail {
+    color: $main-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    display: flex;
+    text-decoration: none;
+    transition: color $animation;
+
+    
+
+}
+
+.link-tel {
+    color: $main-text-color;
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 32px 0;
+    display: flex;
+
+    transition: color $animation;
+
+}
+
+.link-mail:hover,
+.link-mail:focus,
+.link-tel:hover,
+.link-tel:focus {
+    color: $accent-color;
+
+}
+
+.mail-icon,
+.tel-icon {
+    fill: currentColor;
+        margin-right: 10px;
+}

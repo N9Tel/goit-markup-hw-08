@@ -1,0 +1,35 @@
+.footer-btn {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+
+    background-color: $accent-color;
+    color: $text-color;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+
+    transition: border-color $animation;
+
+    &:hover,
+    &:focus {
+        border-color: $text-color;
+    }
+
+}
+
+.icon-subscribe {
+    padding: 0;
+    fill: $text-color;
+}

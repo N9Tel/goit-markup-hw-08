@@ -1,0 +1,29 @@
+.btn-form {
+    display: block;
+    padding-top: 10px;
+    padding-right: 52px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-left: auto;
+    background-color: $accent-color;
+    color: $text-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+    transition: box-shadow $box-shadow;
+
+    &:hover,
+    &:focus {
+    box-shadow: $box-shadow;
+    }
+}
+
+.btn-t {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+}

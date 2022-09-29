@@ -1,0 +1,64 @@
+.check-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.check-input:checked + .icon-check {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url('../images/checked.svg');
+}
+
+.check-input:unchecked + .icon-check {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url('../images/unchecked.svg');
+}
+
+.check-label {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.icon-check {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: -12px;
+    background-image: url('../images/unchecked.svg');
+}
+
+.check-text {
+    margin: 0;
+    margin-left: 9px;
+    display: flex;
+    user-select: none;
+}
+
+.form-link {
+    display: block;
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    
+    color: rgba(117, 117, 117, 1);
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+    color: rgba(33, 150, 243, 1)
+    }
+}

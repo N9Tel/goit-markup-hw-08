@@ -1,0 +1,38 @@
+.buttons {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 0;
+    gap: 8px;
+
+    &.c-buttons:last-child {
+            margin-right: 0px;
+        }
+}
+
+.c-button {
+
+    background-color: $add-background-color;
+    color: $header-color;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    text-align: center;
+    border: 1px solid transparent;
+
+    transition: background-color $animation,
+     color $animation,
+      box-shadow $animation;
+
+      &:hover,
+      &:focus {
+            background-color: $accent-color;
+            color: $text-color;
+            box-shadow: $box-shadow;    
+   }
+}
