@@ -21,11 +21,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 ul {
@@ -107,12 +122,36 @@ ul {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
   letter-spacing: 0.03em;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+@media screen and (min-width: 480px) {
+  .link-header {
+    max-width: 480px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-header {
+    max-width: 768px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-rigt: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-header {
+    max-width: 1200px;
+    font-size: 26px;
+    line-height: 1.1538461538;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-rigt: 93px;
+  }
 }
 
 .logo {
@@ -861,12 +900,36 @@ address {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
   letter-spacing: 0.03em;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+@media screen and (min-width: 480px) {
+  .link-header {
+    max-width: 480px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-header {
+    max-width: 768px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-rigt: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-header {
+    max-width: 1200px;
+    font-size: 26px;
+    line-height: 1.1538461538;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-rigt: 93px;
+  }
 }
 
 .logo {
