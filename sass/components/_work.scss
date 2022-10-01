@@ -1,6 +1,16 @@
 .work {
     padding-top: 0;
     padding-bottom: 94px;
+
+    @media screen and(min-width: 480px) {
+        width: 480px;
+        display: none;
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 768px;
+        display: none;
+    }
 }
 
 .title {
