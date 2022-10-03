@@ -6,8 +6,20 @@
 }
 
 .flex-container-f {
-    display: flex;
-    align-items: baseline;
+    @media screen and(min-width: 480px) {
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and(min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and(min-width: 1200px) {
+        display: flex;
+            align-items: baseline;
+    }
+   
 }
 
 .footer-list {
@@ -18,25 +30,29 @@
 .footer-link {
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
+    font-size: 24px;
+    line-height: calc(28/24);
     letter-spacing: 0.03em;
     color: $text-color;
     text-decoration: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
 
     transition: color $animation;   
 }
 
 address {
     font-style: normal;
-    margin-top: 20px;
+   
 }
 
 .paragraph {
     padding: 0;
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .link-footer {
