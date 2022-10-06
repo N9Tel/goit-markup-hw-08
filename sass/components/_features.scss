@@ -34,17 +34,22 @@
         }
 
 }
+}
 
 .section__title {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-transform: uppercase;    
     color: $header-color;
     margin-top: 0;
     margin-bottom: 10px;
     padding: 0;
+
+    @media screen and(min-width: 480px) {
+        text-align: center;
+    }
 }
 
 

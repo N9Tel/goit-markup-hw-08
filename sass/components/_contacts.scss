@@ -1,91 +1,92 @@
-// .list-contacts {
+ .list-contacts {
 
-//     @media screen and(min-width: 480px){
-//         width: 480px;
-//         display: none;
-//     }
+     @media screen and(min-width: 480px){
+         display: none;
+    }
 
-//         @media screen and(min-width: 768px) {
-//             width: 768px;
-//             display: block;   
-//         }
+         @media screen and(min-width: 768px) {
+             display: block;   
+         }
 
-//                 @media screen and(min-width: 1200px) {
-//                     width: 1200px;
-//                     display: flex;
-//                     align-items: center;
-//                     gap: 50px;
-//                 }
+                 @media screen and(min-width: 1200px) {
+                     display: flex;
+                     align-items: center;
+                    gap: 50px;
+                 }
 
-// }
+ }
+    .link-mail {
+     color: $main-text-color;
+         font-weight: 500;
+         letter-spacing: 0.02em;
+     text-decoration: none;
+    display: none;
+         transition: color $animation;
 
-// .link-mail {
-//     color: $main-text-color;
-//         font-weight: 500;
-//         letter-spacing: 0.02em;
-//     text-decoration: none;
+     @media screen and(min-width: 768px) {
+        display: block;
+        width: 768px;
+         font-size: 12px;
+         line-height: calc(14/12);
+     }
     
-//         transition: color $animation;
+     @media screen and(min-width: 1200px) {
+         width: 1200px;
+         font-size: 14px;
+         line-height: calc(16/14);
+         padding: 32px 0;
+             display: flex;
+     }
+ }
 
-//     @media screen and(min-width: 768px) {
-//        width: 768px;
-//         font-size: 12px;
-//         line-height: calc(14/12);
-//     }
+ .link-tel {
+     color: $main-text-color;
+         font-weight: 500;
+         letter-spacing: 0.02em;         
+         text-decoration: none;
+        display: none;
+
+         transition: color $animation;
     
-//     @media screen and(min-width: 1200px) {
-//         width: 1200px;
-//         font-size: 14px;
-//         line-height: calc(16/14);
-//         padding: 32px 0;
-//             display: flex;
-//     }
-// }
-
-// .link-tel {
-//     color: $main-text-color;
-//         font-weight: 500;
-//         letter-spacing: 0.02em;
-//         text-decoration: none;
+         @media screen and(min-width: 768px) {
+             width: 768px;
+             font-size: 12px;
+             line-height: calc(14/12);
+         }
     
-//         transition: color $animation;
-    
-//         @media screen and(min-width: 768px) {
-//             width: 768px;
-//             font-size: 12px;
-//             line-height: calc(14/12);
-//         }
-    
-//         @media screen and(min-width: 1200px) {
-//             width: 1200px;
-//             font-size: 14px;
-//             line-height: calc(16/14);
-//             padding: 32px 0;
-//             display: flex;
-//         }
+         @media screen and(min-width: 1200px) {
+             width: 1200px;
+             font-size: 14px;
+             line-height: calc(16/14);
+             padding: 32px 0;
+             display: flex;
+         }
 
-// }
+ }
 
-// .link-mail:hover,
-// .link-mail:focus,
-// .link-tel:hover,
-// .link-tel:focus {
-//     color: $accent-color;
+ .link-mail:hover,
+ .link-mail:focus,
+ .link-tel:hover,
+ .link-tel:focus {
+     color: $accent-color;
 
-// }
+ }
 
-// .mail-icon,
-// .tel-icon {
-//     fill: currentColor;
+ .mail-icon,
+ .tel-icon {
+     fill: currentColor;
+    display: none;
 
-//     @media screen and(min-width: 768px) {
-//         width: 768px;
-//         margin-right: 8px;
-//     }
+     @media screen and(min-width: 768px) {
+        display: block;
+        width: 768px;
+         margin-right: 8px;
+     }
 
-//     @media screen and(min-width: 1200px) {
-//         width: 1200px;
-//         margin-right: 10px;
-//     }
+     @media screen and(min-width: 1200px) {
+        display: block;
+         width: 1200px;
+         margin-right: 10px;
+     }
         
-// }
+ }
