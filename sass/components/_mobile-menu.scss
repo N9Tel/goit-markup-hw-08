@@ -2,9 +2,32 @@
     position: fixed;
     top: 0;
     left: 0;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: $main-background-color;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: transform 400ms;
+    padding: 48px 40px;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.mobile-sicial {
+    display: flex;
+    margin-top: 64px;
 }
