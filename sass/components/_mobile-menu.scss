@@ -87,7 +87,15 @@
     font-size: 18px;
     line-height: calc(22/18);
     padding: 0 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    // border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &::after {
+        content: "";
+        height: 22px;
+        display: block;
+        fill:rgba(33, 33, 33, 0.2);
+        margin-left: 10px;
+    }
 
 
 
