@@ -625,6 +625,9 @@ ul {
   color: #2196f3;
 }
 
+.list-contacts {
+  outline: 1px solid red;
+}
 @media screen and (min-width: 480px) {
   .list-contacts {
     display: none;
@@ -839,6 +842,7 @@ ul {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .section__content {
@@ -1116,6 +1120,7 @@ ul {
   .flex-container-f {
     align-items: center;
     justify-content: center;
+    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1174,6 +1179,9 @@ address {
   color: #2196f3;
 }
 
+.social {
+  outline: 1px solid red;
+}
 .social-title {
   font-weight: 700;
   font-size: 16px;
@@ -1228,6 +1236,7 @@ address {
 
 .flex-container-subscribe {
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 .subscribe-form {
@@ -1715,6 +1724,9 @@ address {
   color: #2196f3;
 }
 
+.list-contacts {
+  outline: 1px solid red;
+}
 @media screen and (min-width: 480px) {
   .list-contacts {
     display: none;
@@ -1987,6 +1999,7 @@ address {
   .flex-container-f {
     align-items: center;
     justify-content: center;
+    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2045,6 +2058,9 @@ address {
   color: #2196f3;
 }
 
+.social {
+  outline: 1px solid red;
+}
 .social-title {
   font-weight: 700;
   font-size: 16px;
@@ -2099,6 +2115,7 @@ address {
 
 .flex-container-subscribe {
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 .subscribe-form {
