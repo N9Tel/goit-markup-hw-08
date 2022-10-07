@@ -399,7 +399,7 @@ ul {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-menu {
     display: flex;
     justify-content: space-between;
@@ -768,20 +768,20 @@ ul {
   background-size: cover;
   background-position: center;
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1612,7 +1612,7 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-menu {
     display: flex;
     justify-content: space-between;
