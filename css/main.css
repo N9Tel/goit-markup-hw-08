@@ -267,6 +267,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
@@ -287,7 +291,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -322,7 +325,7 @@ img {
   height: auto;
 }
 
-link {
+a {
   text-decoration: none;
 }
 
@@ -379,18 +382,24 @@ ul {
 }
 
 .header-box {
+  position: relative;
   display: flex;
   align-items: center;
-  width: 480px;
+}
+@media screen and (max-width: 768px) {
+  .header-box {
+    justify-content: space-between;
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-box {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-box {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -414,6 +423,8 @@ ul {
   font-family: "Raleway";
   font-weight: 700;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 480px) {
   .link-header {
@@ -437,7 +448,7 @@ ul {
     line-height: 1.1538461538;
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-rigt: 93px;
+    margin-rigt: 92px;
   }
 }
 
@@ -519,9 +530,11 @@ ul {
 }
 
 .link {
+  text-decoration: none;
   font-size: 40px;
   line-height: 1.175;
   color: rgb(33, 33, 33);
+  margin-bottom: 32px;
 }
 .link:hover, .link:focus {
   color: #2196f3;
@@ -532,6 +545,7 @@ ul {
   font-size: 34px;
   line-height: 1.1764705882;
   color: rgb(117, 117, 117);
+  text-decoration: none;
 }
 .menu-tel:hover, .menu-tel:focus {
   color: #2196f3;
@@ -539,6 +553,7 @@ ul {
 }
 
 .menu-mail {
+  text-decoration: none;
   font-size: 24px;
   line-height: 1.1666666667;
   color: rgb(117, 117, 117);
@@ -549,15 +564,21 @@ ul {
 }
 
 .mobile-social-item {
+  position: relative;
+  margin-right: 20px;
   font-size: 18px;
   line-height: 1.2222222222;
   padding: 0 10px;
 }
-.mobile-social-item::after {
+.mobile-social-item:not(:last-child)::after {
   content: "";
-  height: 22px;
+  position: absolute;
   display: block;
-  fill: rgba(33, 33, 33, 0.2);
+  height: 100%;
+  width: 1px;
+  top: 0;
+  right: -10px;
+  background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
 
@@ -569,6 +590,7 @@ ul {
   gap: 50px;
   align-items: center;
 }
+
 @media screen and (min-width: 480px) {
   .nav {
     display: none;
@@ -576,15 +598,17 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-right: 96px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav {
-    display: block;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
   }
 }
-
 .current {
   color: #2196f3;
   font-weight: 500;
@@ -869,9 +893,14 @@ ul {
   margin-bottom: 10px;
   padding: 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .section__title {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    text-align: left;
   }
 }
 
@@ -895,14 +924,20 @@ ul {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .work__list {
@@ -1047,20 +1082,7 @@ ul {
   text-align: center;
   padding: 0;
   margin: 0;
-}
-@media screen and (min-width: 480px) {
-  .clients__title {
-    font-size: 28px;
-    line-height: 1.1785714286;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__title {
-    font-size: 28px;
-    line-height: 1.1785714286;
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
@@ -1193,15 +1215,10 @@ address {
   margin-right: auto;
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 1200px) {
   .social-title {
     margin-left: 70px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social {
-    margin-top: 65px;
   }
 }
 .social-list {
@@ -1592,18 +1609,24 @@ address {
 }
 
 .header-box {
+  position: relative;
   display: flex;
   align-items: center;
-  width: 480px;
+}
+@media screen and (max-width: 768px) {
+  .header-box {
+    justify-content: space-between;
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-box {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-box {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1627,6 +1650,8 @@ address {
   font-family: "Raleway";
   font-weight: 700;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 480px) {
   .link-header {
@@ -1650,7 +1675,7 @@ address {
     line-height: 1.1538461538;
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-rigt: 93px;
+    margin-rigt: 92px;
   }
 }
 
@@ -1668,6 +1693,7 @@ address {
   gap: 50px;
   align-items: center;
 }
+
 @media screen and (min-width: 480px) {
   .nav {
     display: none;
@@ -1675,15 +1701,17 @@ address {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-right: 96px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav {
-    display: block;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
   }
 }
-
 .current {
   color: #2196f3;
   font-weight: 500;
@@ -2072,15 +2100,10 @@ address {
   margin-right: auto;
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 1200px) {
   .social-title {
     margin-left: 70px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social {
-    margin-top: 65px;
   }
 }
 .social-list {

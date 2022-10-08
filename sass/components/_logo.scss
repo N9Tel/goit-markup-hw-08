@@ -5,6 +5,8 @@
     font-family: 'Raleway';
     font-weight: 700;
     letter-spacing: 0.03em;
+    padding-top: 16px;
+        padding-bottom: 16px;
 
     @media screen and (min-width: 480px) {
                 line-height: calc(28/24);                            
@@ -25,10 +27,10 @@
                 line-height: calc(30/26);
                 padding-top: 24px;
                 padding-bottom: 25px;
-                margin-rigt: 93px;
+                margin-rigt: 92px;
         }
             
-        }
+}
 
 
 .logo {

@@ -86,17 +86,23 @@
      }
 }
 
-.mobile-social-item {
+.mobile-social-item {   
+            position: relative;
+            margin-right: 20px;
+       
     font-size: 18px;
     line-height: calc(22/18);
     padding: 0 10px;   
 
     &:not(:last-child)::after {
         content: "";
-        height: 22px;
-        width: 0px;
-        // display: block;
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        top: 0;
+        right: -10px;
+        background-color:  rgba(33, 33, 33, 0.2);
         margin-left: 10px;
     }
 

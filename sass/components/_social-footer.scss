@@ -11,16 +11,14 @@
     margin-right: auto;
     margin-bottom: 20px;
     
-    // @media screen and(min-width: 768px) {
-    //         margin-top: 65px;
-    //     }
    }
 }
-         @media screen and(min-width: 1200px) {
-            .social-title 
-            margin-left: 70px;
-         }
 
+@media screen and(min-width: 1200px) {
+     .social-title {
+    margin-left: 70px;
+ }
+}
 .social-list {
     display: flex;
     align-items: center;
