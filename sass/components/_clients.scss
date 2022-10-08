@@ -24,14 +24,15 @@
 }
 
 .clients__list {
-    display: flex;
-     gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     
 }
 
 .clients__item {
-    width: calc((100% - 30px) /2);
+    flex-basis: calc((100% - 30px) /2);
 
     @media screen and(min-width: 768px) {
          flex-basis: calc((100% - 60px) / 3);
@@ -49,6 +50,7 @@
     fill: #afb1b8;
     height: 92px;
     border: 1px solid #afb1b8;
+    border-radius: 4px;
     text-decoration: none;
     transition: border-color $animation,
         fill $animation;
