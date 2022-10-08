@@ -13,9 +13,9 @@
     }
 }
 
-.section__content {
-    max-width: 450px;
-    height: 120px;
+.section__content { 
+    padding: 25px;
+    margin-bottom: 30px;
     border: transparent;
     border-radius: 4px;
     background-color: $add-background-color;
@@ -37,6 +37,12 @@
         }
 
 }
+}
+
+.section__icon {
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .section__title {
@@ -64,6 +70,6 @@
     font-size: 14px;      
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-     margin-top: 0;
+     margin-top: 10px;
     margin-bottom: 0;
 }
