@@ -47,7 +47,7 @@ screen and (min-width: 481px) and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
         url(../images/hero/t_@2x.jpg);
     }
-
+}
         @media screen and (min-width: 768px) {
             .hero {
                 padding: 118px 189px;
@@ -77,14 +77,14 @@ screen and (min-width: 481px) and (min-resolution: 2dppx) {
                   rgba(47, 48, 58, 0.4)), 
                   url(../images/hero/d_@2x.jpg);
                     }
-                }
+            }
           @media screen and (min-width: 1200px) {
                 .hero-section {
                      padding: 200px;
                      height: 600px;
                 }
-         }
-        }
+            }
+        
 .hero-title {
     display: block;
     margin-top: 0;

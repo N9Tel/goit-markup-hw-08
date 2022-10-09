@@ -9,6 +9,7 @@
     .flex-container-subscribe {
         width: 450px;
     }
+}
 
  @media screen and (min-width: 1200px) {
      .flex-container-subscribe {
@@ -16,8 +17,8 @@
                 margin-left: 0;
                 margin-right: 0;
                 text-align: left;
-        }
-}
+        }    
+    }
 
 .mailing {
     display: block;
@@ -72,8 +73,8 @@
  @media screen and(min-width: 768px) {
      .subscribe-field {
          max-width: 450px;
-     }
- }
+        }
+    }
 
  @media screen and (min-width: 1200px) {
      .subscribe-field {
@@ -81,5 +82,5 @@
          margin-right: 12px;
          margin-left: 0;
          margin-bottom: 0;
-     }
- }
+        }
+    } 
