@@ -1,10 +1,13 @@
-.section {
-  &__list {
-        
+
+.section__list {        
+     display: block;
+    gap: 30px; 
+
+    @media screen and(min-width:768px) {
         display: flex;
-        gap: 30px;
     }
 }
+
 
 .section__item :not(:nth-last-child) {
      
@@ -24,6 +27,13 @@
     justify-content: center;
    
     outline: 1px solid red;
+
+    @media screen and(max-width: 479px){
+        display: block;
+        width: 450px;
+    }
+        
+    }
 
     @media screen and(min-width: 768px) { 
         width: 354px;  
