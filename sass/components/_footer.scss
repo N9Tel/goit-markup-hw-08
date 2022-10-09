@@ -37,14 +37,15 @@
     text-decoration: none;
     margin-bottom: 20px;
 
-    transition: color $animation;   
+    transition: color $animation;    
+    @media screen and(min-width: 1200px) {
+            font-size: 26px;
+            line-height: calc(30/26);
+    
+        }
+    
 }
 
-@media screen and(min-width: 1200px) {
-    font-size: 26px;
-    line-height: calc(30/26);
-
-}
 
 .footer-contacts {
     text-align: center;
