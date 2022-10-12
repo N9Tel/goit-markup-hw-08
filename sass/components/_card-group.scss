@@ -1,134 +1,134 @@
-// .flex-container {
-//     gap: 30px;
-//     padding-left: 0;  
-// }
+.flex-container {
+    gap: 30px;
+    padding-left: 0;  
+}
 
 
 
 
 
 
-// .flex-element {
-//     display: flex;
-//     width: 100%;
-//     gap: 30px;
+.flex-element {
+    display: flex;
+    width: 100%;
+    gap: 30px;
 
-//     &:nth-child(3n) {
-//             margin-right: 0px;
-//         }
+    &:nth-child(3n) {
+            margin-right: 0px;
+        }
 
-//     &:nth-last-child(-n+3) {
-//         margin-bottom: 0;
-//     }
-// }
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+}
 
-// @media screen and(min-width: 768px) {
-//     .flex-element {
-//         flex-basis: calc((100% - 30px) / 2);
-//     }
-// }
+@media screen and(min-width: 768px) {
+    .flex-element {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
 
-// @media screen and(min-width: 1200px) {
-//     .flex-element {
-//             flex-basis: calc((100% - 60px) / 3);
-//         }
-// }
+@media screen and(min-width: 1200px) {
+    .flex-element {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+}
 
-// .flex-link {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;  
-//     text-decoration: none;
-//     color: $main-text-color;
+.flex-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    text-decoration: none;
+    color: $main-text-color;
 
-//     transition: box-shadow $box-shadow;
+    transition: box-shadow $box-shadow;
 
-//     &:hover .overlay-desc,
-//     &:focus .overlay-desc {
-//     transform: translateY(0);
-//     }
+    &:hover .overlay-desc,
+    &:focus .overlay-desc {
+    transform: translateY(0);
+    }
 
-//     &:hover,
-//     &:focus {
-//     box-shadow: $box-shadow;
-//     }
+    &:hover,
+    &:focus {
+    box-shadow: $box-shadow;
+    }
 
-// }
+}
 
-// .project-thumb {
-//     position: relative;
-//     overflow: hidden;
-// }
+.project-thumb {
+    position: relative;
+    overflow: hidden;
+}
 
-// .flex-item {
-//     margin: 0;
-// }
+.flex-item {
+    margin: 0;
+}
 
 
 
-// .overlay-desc {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(33, 150, 243, 0.9);
-//     width: 100%;
-//     height: 100%;
-//     padding: 77px 24px;
+.overlay-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    padding: 77px 24px;
 
-//     transform: translateY(101%);
-//     transition: transform $animation;
+    transform: translateY(101%);
+    transition: transform $animation;
 
-//     @media screen and(min-width: 768px) {
-//         padding-top: 49px;
-//         padding-left: 24px;
-//         padding-right: 24px;
-//         padding-bottom: 77px;
-//     }
+    @media screen and(min-width: 768px) {
+        padding-top: 49px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 77px;
+    }
 
-//     @media screen and(min-width: 1200px) {
-//         padding: 63px 24px;
-//     }
-// }
+    @media screen and(min-width: 1200px) {
+        padding: 63px 24px;
+    }
+}
 
-// .text {
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: calc(28/18);
-//     letter-spacing: 0.03em;
-//     color: $text-color;
-// }
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    color: $text-color;
+}
 
-// .description {
+.description {
 
-//     border: 1px solid #ECECEC;
-//     border-top: none;
-//     padding: 20px 24px;
+    border: 1px solid #ECECEC;
+    border-top: none;
+    padding: 20px 24px;
 
-//     @media screen and(min-width: 768px) {
-//         padding-top: 20px;
-//         padding-left: 24px;
-//         padding-right: 24px;
-//         padding-bottom: 56px;
-//     }
+    @media screen and(min-width: 768px) {
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 56px;
+    }
 
-// }
+}
 
-// .pr-title {
-//     color: $header-color;
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: calc(36/18);
-//     letter-spacing: 0.06em;
-//     margin: 0;
-//     margin-bottom: 4px;
-//     padding: 0;
-// }
+.pr-title {
+    color: $header-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
+}
 
-// .subtext {
-//     font-size: 16px;
-//     line-height: calc(30/16);
-//     letter-spacing: 0.03em;
-//     padding: 0;
-//     margin: 0;
-// }
+.subtext {
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
+}
 

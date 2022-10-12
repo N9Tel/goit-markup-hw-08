@@ -1,135 +1,135 @@
-//  .list-contacts {
-// outline: 1px solid red;
-//      @media screen and(min-width: 480px){
-//          display: none;
-//     }
+ .list-contacts {
+outline: 1px solid red;
+     @media screen and(min-width: 480px){
+         display: none;
+    }
 
-//          @media screen and(max-width: 767px) {
-//              display: block;  
-//              margin-bottom: 64px; 
-//          }
+         @media screen and(max-width: 767px) {
+             display: block;  
+             margin-bottom: 64px; 
+         }
 
-//          @media screen and(min-width: 768px){
-//             display: flex;
-//             flex-direction: column;
-//          }
+         @media screen and(min-width: 768px){
+            display: flex;
+            flex-direction: column;
+         }
 
-//                  @media screen and(min-width: 1200px) {
-//                      display: flex;
-//                      flex-direction: row;
-//                      align-items: center;
-//                     gap: 50px;
-//                  }
+                 @media screen and(min-width: 1200px) {
+                     display: flex;
+                     flex-direction: row;
+                     align-items: center;
+                    gap: 50px;
+                 }
 
-//  }
+ }
 
-//  @media screen and (min-width: 768px) and (max-width: 1199px) {
-//      .contacts {
-//          display: flex;
-//          margin-bottom: 10px;
-//      }   
-//  }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+     .contacts {
+         display: flex;
+         margin-bottom: 10px;
+     }   
+ }
 
-//  @media screen and (min-width: 768px) and (max-width: 1199px) {
-//      .contacts:last-child {
-//          margin-bottom: 0;
-//      }
-//  }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+     .contacts:last-child {
+         margin-bottom: 0;
+     }
+ }
 
-//  @media screen and (max-width: 767px) {
-//      .contacts:not(:last-child) {
-//          margin-bottom: 32px;
-//      }
-//  }
+ @media screen and (max-width: 767px) {
+     .contacts:not(:last-child) {
+         margin-bottom: 32px;
+     }
+ }
 
-//  @media screen and (min-width: 1200px) {
-//      .contacts:not(:last-child) {
-//          margin-right: 30px;
-//      }
-//  }
-
-
-//     .link-mail,
-//          .link-tel {
-//      color: $main-text-color;
-//          font-weight: 500;
-//          letter-spacing: 0.02em;
-//      text-decoration: none;
-//     display: none;
-//          transition: color $animation;
-//     }
-
-//      @media screen and(min-width: 768px) {
-//         .link-mail,
-//         .link-tel {
-//         display: flex;
-//         align-items: center;
-//          font-size: 12px;
-//          line-height: calc(14/12);
-//         }
-//     }
-//      @media screen and (min-width: 768px) 
-//      and (min-width: 1200px) {
-//         .link-mail,
-//             .link-tel {
-//          font-size: 14px;
-//          line-height: calc(16/14);
-//          padding: 32px 0;
-//              display: flex;
-//      }
-// }
+ @media screen and (min-width: 1200px) {
+     .contacts:not(:last-child) {
+         margin-right: 30px;
+     }
+ }
 
 
-//  .link-mail:hover,
-//  .link-mail:focus,
-//  .link-tel:hover,
-//  .link-tel:focus {
-//      color: $accent-color;
+    .link-mail,
+         .link-tel {
+     color: $main-text-color;
+         font-weight: 500;
+         letter-spacing: 0.02em;
+     text-decoration: none;
+    display: none;
+         transition: color $animation;
+    }
 
-//  }
+     @media screen and(min-width: 768px) {
+        .link-mail,
+        .link-tel {
+        display: flex;
+        align-items: center;
+         font-size: 12px;
+         line-height: calc(14/12);
+        }
+    }
+     @media screen and (min-width: 768px) 
+     and (min-width: 1200px) {
+        .link-mail,
+            .link-tel {
+         font-size: 14px;
+         line-height: calc(16/14);
+         padding: 32px 0;
+             display: flex;
+     }
+}
 
-//  .mail-icon,
-//  .tel-icon {
-//      fill: currentColor;
-//     display: none;
 
-//      @media screen and(min-width: 768px) {
-//         display: block;
-//         width: 768px;
-//          margin-right: 8px;
-//      }
+ .link-mail:hover,
+ .link-mail:focus,
+ .link-tel:hover,
+ .link-tel:focus {
+     color: $accent-color;
 
-//      @media screen and(min-width: 1200px) {
-//         display: block;
-//          width: 1200px;
-//          margin-right: 10px;
-//      }
+ }
+
+ .mail-icon,
+ .tel-icon {
+     fill: currentColor;
+    display: none;
+
+     @media screen and(min-width: 768px) {
+        display: block;
+        width: 768px;
+         margin-right: 8px;
+     }
+
+     @media screen and(min-width: 1200px) {
+        display: block;
+         width: 1200px;
+         margin-right: 10px;
+     }
         
-//  }
+ }
 
-//  @media screen and (max-width: 768px) {
-//     .mail-icon,
-//         .tel-icon {
-//          display: none;
-//      }
-//  }
+ @media screen and (max-width: 768px) {
+    .mail-icon,
+        .tel-icon {
+         display: none;
+     }
+ }
 
-//  @media screen and (min-width: 768px) {
-//     .mail-icon,
-//         .tel-icon { 
-//          display: block;
-//          width: 14px;
-//          height: 14px;
-//          fill: currentColor;
-//          margin-right: 8px;
-//         //  vertical-align: middle;
-//      }
-//  }
+ @media screen and (min-width: 768px) {
+    .mail-icon,
+        .tel-icon { 
+         display: block;
+         width: 14px;
+         height: 14px;
+         fill: currentColor;
+         margin-right: 8px;
+        //  vertical-align: middle;
+     }
+ }
 
-//  @media screen and (min-width: 1200px) {
-//      .contacts__icon {
-//          width: 16px;
-//          height: 16px;
-//          margin-right: 10px;
-//      }
-//  }
+ @media screen and (min-width: 1200px) {
+     .contacts__icon {
+         width: 16px;
+         height: 16px;
+         margin-right: 10px;
+     }
+ }
