@@ -274,18 +274,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -294,6 +282,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -384,6 +373,12 @@ ul {
 
 .header {
   border-bottom: #ececec;
+  min-height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 80px;
+  }
 }
 
 .header-box {
@@ -395,7 +390,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .header-box {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -441,12 +436,6 @@ ul {
   letter-spacing: 0.03em;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-@media screen and (min-width: 480px) {
-  .link-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 @media screen and (min-width: 768px) {
   .link-header {
@@ -1499,6 +1488,12 @@ address {
 
 .header {
   border-bottom: #ececec;
+  min-height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 80px;
+  }
 }
 
 .header-box {
@@ -1510,7 +1505,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .header-box {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1556,12 +1551,6 @@ address {
   letter-spacing: 0.03em;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-@media screen and (min-width: 480px) {
-  .link-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 @media screen and (min-width: 768px) {
   .link-header {
