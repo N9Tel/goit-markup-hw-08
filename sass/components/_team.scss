@@ -1,111 +1,111 @@
-.section team {
-    background-color: $add-background-color;   
-    margin-top: 0;
-    margin-bottom: 0;
-}
+// .section team {
+//     background-color: $add-background-color;   
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
 
-.container-team {
+// .container-team {
 
-    @media screen and(min-width: 1199px) {
-        justify-content: space-evenly;
-    }
+//     @media screen and(min-width: 1199px) {
+//         justify-content: space-evenly;
+//     }
     
-}
+// }
 
-.team__list {
-    flex-direction: column;
+// .team__list {
+//     flex-direction: column;
 
-    @media screen and(min-width: 768px) {
-    //  display: flex;
-    //     gap: 30px;
-      flex-direction: row; 
-    padding: 0; 
-    }
+//     @media screen and(min-width: 768px) {
+//     //  display: flex;
+//     //     gap: 30px;
+//       flex-direction: row; 
+//     padding: 0; 
+//     }
      
-}
+// }
 
-.team__item {   
-    background-color: $main-background-color;
-    box-shadow: $box-shadow;
-    width: 450px;
-    gap: 30px;
+// .team__item {   
+//     background-color: $main-background-color;
+//     box-shadow: $box-shadow;
+//     width: 450px;
+//     gap: 30px;
 
-    @media screen and(max-width: 767px) {
-       width: 100%;
-    }
+//     @media screen and(max-width: 767px) {
+//        width: 100%;
+//     }
 
-        @media screen and (min-width: 768px) {
-                flex-basis: calc((100% - 30px) / 2);
-            }
+//         @media screen and (min-width: 768px) {
+//                 flex-basis: calc((100% - 30px) / 2);
+//             }
        
 
-    @media screen and(min-width: 1200px){
-        flex-basis: calc((100% - 90px) / 4);
-    }
+//     @media screen and(min-width: 1200px){
+//         flex-basis: calc((100% - 90px) / 4);
+//     }
 
-}  
+// }  
  
 
-.team__text {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 24px;
+// .team__text {
+//     text-align: center;
+//     padding-top: 30px;
+//     padding-bottom: 24px;
 
-    @media screen and(min-width: 1200px) {
-    padding: 30px 32px;
-    }
+//     @media screen and(min-width: 1200px) {
+//     padding: 30px 32px;
+//     }
     
-}
+// }
 
-.team__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    color: $header-color;
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
-}
+// .team__name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: calc(19/16);
+//     letter-spacing: 0.03em;
+//     color: $header-color;
+//     margin: 0;
+//     margin-bottom: 10px;
+//     text-align: center;
+// }
 
-.team__subtext {
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 16;
-    text-align: center;
-}
+// .team__subtext {
+//     font-size: 16px;
+//     line-height: calc(19/16);
+//     letter-spacing: 0.03em;
+//     margin-top: 0;
+//     margin-bottom: 16;
+//     text-align: center;
+// }
 
-.list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+// .list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+// }
 
-.list__item {
-    display: inline-block;
-    margin: 0;
-}
+// .list__item {
+//     display: inline-block;
+//     margin: 0;
+// }
 
-.list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: #AFB1B8;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    gap: 10px;
+// .list__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     fill: #AFB1B8;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     gap: 10px;
 
-    transition: background-color $animation,
-    fill $animation;
+//     transition: background-color $animation,
+//     fill $animation;
 
-    &:hover,
-     &:focus {
-         fill: $text-color;
-         background-color: $accent-color;
-        }
-}
+//     &:hover,
+//      &:focus {
+//          fill: $text-color;
+//          background-color: $accent-color;
+//         }
+// }
 
 

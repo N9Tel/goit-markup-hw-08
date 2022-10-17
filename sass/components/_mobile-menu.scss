@@ -27,6 +27,8 @@
     position: absolute;
     top: 20px;
     right: 25px;
+    border: none;
+    background-color: transparent;
 
     &:hover,
         &:focus {
@@ -36,12 +38,9 @@
         }
 }
 
-.mobile-social {
-    display: flex;
-    margin-top: 64px;
-}
 
-.link {
+
+.menu-link {
     text-decoration: none;
     font-size: 40px;
     line-height: calc(47/40);
@@ -86,23 +85,21 @@
      }
 }
 
+.mobile-social-list{
+    display: flex;
+    margin-top: 64px;
+}
+
 .mobile-social-item {   
-            position: relative;
+           
             margin-right: 20px;
        
     font-size: 18px;
     line-height: calc(22/18);
     padding: 0 10px;   
 
-    &:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 1px;
-        top: 0;
-        right: -10px;
-        background-color:  rgba(33, 33, 33, 0.2);
+    &:not(:last-child) {   
+       border-right: 1px solid rgba(33, 33, 33, 0.2);
         margin-left: 10px;
     }
 
