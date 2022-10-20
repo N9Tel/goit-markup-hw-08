@@ -872,6 +872,7 @@ ul {
 
 .section__list {
   display: block;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .section__list {
@@ -884,7 +885,7 @@ ul {
 }
 
 .section__item {
-  width: 320px;
+  width: 100%;
   outline: 1px solid red;
 }
 
@@ -900,7 +901,7 @@ ul {
 
 @media screen and (min-width: 480px) {
   .section__item {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -978,7 +979,7 @@ ul {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .work {
@@ -1319,6 +1320,7 @@ address {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1406,8 +1408,8 @@ address {
 }
 
 .field:focus-within + .f-icon {
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
+  fill: #2196f3;
+  stroke: #2196f3;
 }
 
 .f-icon {
@@ -1439,7 +1441,7 @@ address {
   height: 120px;
   resize: none;
   padding: 12px 16px;
-  margin-bottom: -12px;
+  margin-bottom: 10px;
   border: 1.5px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
@@ -1484,6 +1486,37 @@ address {
 }
 .comment:hover, .comment:focus {
   border-color: #2196f3;
+}
+
+.btn-form {
+  display: block;
+  padding-top: 10px;
+  padding-right: 52px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  margin-right: auto;
+  margin-top: 22px;
+  margin-left: auto;
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16), -webkit-box-shadow 0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16), -webkit-box-shadow 0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16), -webkit-box-shadow 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.btn-form:hover, .btn-form:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn-t {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 
 .header {

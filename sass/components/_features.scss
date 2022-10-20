@@ -1,7 +1,7 @@
 
 .section__list {        
      display: block;
-   
+   gap: 30px;
 
     @media screen and(min-width:768px) {
         display: flex;
@@ -10,7 +10,7 @@
 }
 
 .section__item {
-    width: 320px;    
+   width: 100%;    
     outline: 1px solid red;
 }
 
@@ -27,7 +27,7 @@
 
 @media screen and(min-width: 480px) {
     .section__item {
-        width: 450px;
+        max-width: 450px;
     }
 }
 
@@ -109,5 +109,5 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
      margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
