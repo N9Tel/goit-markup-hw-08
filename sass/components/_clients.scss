@@ -27,12 +27,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
+    gap: 30px;
     
 }
 
 .clients__item {
     flex-basis: calc((100% - 30px) /2);
+    gap: 30px;
 
     @media screen and(min-width: 768px) {
          flex-basis: calc((100% - 60px) / 3);
@@ -52,6 +53,7 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     text-decoration: none;
+
     transition: border-color $animation,
         fill $animation;
 
