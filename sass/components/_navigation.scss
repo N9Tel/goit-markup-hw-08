@@ -1,96 +1,96 @@
-// .nav {
-//     margin-right: auto;
+.nav {
+    margin-right: auto;
 
-// &-list {
-//         display: flex;
-//         gap: 50px;
-//         align-items: center;
+&-list {
+        display: flex;
+        gap: 50px;
+        align-items: center;
 
-//     }
-// }
-//     @media screen and(min-width: 480px) {
-//         .nav {
-//         display: none;    
-//     }
-// }
-//     @media screen and(min-width: 768px) {
-//         .nav {
-//         display: flex;
-//         align-items: center;
-//         margin-right: 96px;
-//     }
-// }
+    }
+}
+    @media screen and(min-width: 480px) {
+        .nav {
+        display: none;    
+    }
+}
+    @media screen and(min-width: 768px) {
+        .nav {
+        display: block;
+        align-items: center;
+        margin-right: 96px;
+    }
+}
         
-// @media screen and(min-width: 768px) {
-//      .nav-list {
-//         display: flex;
-//         align-items: center;
-//      }
-// }
+@media screen and(min-width: 768px) {
+     .nav-list {
+        display: flex;
+        align-items: center;
+     }
+}
     
 
-// .current {
-//     color: $accent-color;    
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: calc(16/14);
-//     letter-spacing: 0.02em;
+.current {
+    color: $accent-color;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 
-//     &::after {
-//             content: "";
-//             position: absolute;
-//             width: 100%;
-//             height: 4px;
-//             left: 0;
-//             border-radius: 2px;
-//             border: transparent;
-//             background-color: $accent-color;
-//             bottom: -1px;
-//             display: block;
-//         }
-// }
+    &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            border-radius: 2px;
+            border: transparent;
+            background-color: $accent-color;
+            bottom: -1px;
+            display: block;
+        }
+}
 
 
 
-// .nav-item {
-//     position: relative;
-//     display: block;
+.nav-item {
+    position: relative;
+    display: block;
 
-// }
+}
 
-// @media screen and (max-width: 767px) {
-//     .nav-item:not(:last-child) {
-//         margin-bottom: 32px;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    .nav-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
 
-// @media screen and (min-width: 767px) {
-//     .nav__item:not(:last-child) {
-//         margin-right: 50px;
-//     }
-// }
+@media screen and (min-width: 767px) {
+    .nav__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
 
-// .nav .link-n {
-//     display: block;
-//     color: $header-color;
-//     font-weight: 500;
-//     line-height: 1.14;
-//     align-items: baseline;
-//     padding: 0;
-//     padding: 32px 0;
-//     text-decoration: none;
-//     transition: color $animation;
+.nav .link-n {
+    display: block;
+    color: $header-color;
+    font-weight: 500;
+    line-height: 1.14;
+    align-items: baseline;
+    padding: 0;
+    padding: 32px 0;
+    text-decoration: none;
+    transition: color $animation;
 
-//     &:hover,
-//     &:focus {
-//     color: $accent-color;
-//     }
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
 
-// }
+}
 
-// @media screen and (min-width: 768px) {
-//     .nav .link-n {
-//         padding-top: 32px;
-//         padding-bottom: 32px;
-//     }
-// }
+@media screen and (min-width: 768px) {
+    .nav .link-n {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

@@ -1,6 +1,6 @@
 
 .section__list {        
-     display: block;
+     
    gap: 30px;
 
     @media screen and(min-width:768px) {
@@ -10,11 +10,12 @@
 }
 
 .section__item {
-   width: 100%;    
+   width: 100vw; 
+   height: 120px;   
     outline: 1px solid red;
 }
 
-.section__item :not(:nth-last-child) {
+.section__item:not(:nth-last-child) {
       margin-bottom: 30px;
     }
 
