@@ -1,6 +1,7 @@
 
 .section__list {        
-     
+     display: flex;
+     flex-wrap: wrap;
    gap: 30px;
 
     @media screen and(min-width:768px) {
@@ -10,8 +11,8 @@
 }
 
 .section__item {
-   width: 100vw; 
-   height: 120px;   
+   width: 100%; 
+   min-height: 120px;   
     outline: 1px solid red;
 }
 
@@ -28,7 +29,7 @@
 
 @media screen and(min-width: 480px) {
     .section__item {
-        max-width: 450px;
+       width: 450px;
     }
 }
 

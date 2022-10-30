@@ -967,6 +967,11 @@ ul {
 }
 
 .section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -980,8 +985,8 @@ ul {
 }
 
 .section__item {
-  width: 100vw;
-  height: 120px;
+  width: 100%;
+  min-height: 120px;
   outline: 1px solid red;
 }
 
@@ -997,7 +1002,7 @@ ul {
 
 @media screen and (min-width: 480px) {
   .section__item {
-    max-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1172,6 +1177,7 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1536,6 +1542,77 @@ address {
   background-color: #2196f3;
 }
 
+.flex-container-subscribe {
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .flex-container-subscribe {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-container-subscribe {
+    min-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+.mailing {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.subscribe-field {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.subscribe-field:hover, .subscribe-field:focus {
+  border-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-field {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-field {
+    min-width: 350px;
+    margin-right: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 .footer-btn {
   margin-left: auto;
   margin-right: auto;
@@ -2470,6 +2547,77 @@ address {
   background-color: #2196f3;
 }
 
+.flex-container-subscribe {
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .flex-container-subscribe {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-container-subscribe {
+    min-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+.mailing {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.subscribe-field {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.subscribe-field:hover, .subscribe-field:focus {
+  border-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-field {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-field {
+    min-width: 350px;
+    margin-right: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 .footer-btn {
   margin-left: auto;
   margin-right: auto;
