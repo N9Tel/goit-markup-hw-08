@@ -38,21 +38,36 @@
         }
 }
 
+.menu-items {
+    display: flex;
+    // justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+.m-item {
+   margin-bottom: 32px;
+    &:hover,
+        &:focus {
+            color: $accent-color;
+    
+            transition: color $animation;
+        }
+}
 
+.m-contacts {
+    display: flex;
+}
 
 .menu-link {
+    display: block;
     text-decoration: none;
     font-size: 40px;
     line-height: calc(47/40);
+    letter-spacing: 0.02em;
     color: rgba(33, 33, 33, 1);
-    margin-bottom: 32px;
+    cursor: pointer;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
 
-        transition: color $animation;
-    }
 
 }
 
@@ -83,6 +98,11 @@
     
          transition: color $animation;
      }
+}
+
+.m-social {
+    font-size: 18px;
+ margin-bottom: 0;
 }
 
 .mobile-social-list{
