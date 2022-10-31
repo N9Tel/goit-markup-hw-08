@@ -1,7 +1,8 @@
-.menu-container {
-    position: fixed;
+.js-menu-container {
+    position:fixed;
     top: 0;
     left: 0;
+    display: flex;
     flex-direction: column;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -18,10 +19,12 @@
 }
 
 @media screen and(min-width: 768px) {
-    .menu-container {
+    .js-menu-container {
         display: none;
     }
 }
+
+
 
 .menu-toggle {
     position: absolute;
@@ -30,99 +33,105 @@
     border: none;
     background-color: transparent;
 
+    transition: color $animation;
+
     &:hover,
-        &:focus {
-            color: $accent-color;
-    
-            transition: color $animation;
-        }
+    &:focus {
+        color: $accent-color;
+    }
 }
 
-.menu-items {
+.mobile-menu-items {
     display: flex;
-    // justify-content: space-between;
-    margin-top: 0;
+    font-size: 40px;
+    line-height: calc(47/40);
     margin-bottom: 150px;
-}
-.m-item {
-   margin-bottom: 32px;
-    &:hover,
-        &:focus {
-            color: $accent-color;
-    
-            transition: color $animation;
-        }
+    margin-top: 0;
+
 }
 
-.m-contacts {
-    display: flex;
+.mobile-item {
+    margin-bottom: 32px;
 }
 
 .menu-link {
     display: block;
-    text-decoration: none;
-    font-size: 40px;
-    line-height: calc(47/40);
-    letter-spacing: 0.02em;
     color: rgba(33, 33, 33, 1);
     cursor: pointer;
+    
+     
+    transition: color $animation;
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+}
+    
 
 
-
+.m-contacts {
+    display: flex;
+    margin-bottom: 64px;
+    
 }
 
 .menu-tel {
     font-size: 34px;
     line-height: calc(40/34);
     color: rgba(117, 117, 117, 1);
-    text-decoration: none;
 
-&:hover,
-&:focus {
+     transition: color $animation;
+
+     &:hover,
+     &:focus {
         color: $accent-color;
-
-        transition: color $animation;
-    }
-
-}
-
-.menu-mail {
-    text-decoration: none;
-        font-size: 24px;
-        line-height: calc(28/24);
-        color: rgba(117, 117, 117, 1);
-
-    &:hover,
-    &:focus {
-         color: $accent-color;
-    
-         transition: color $animation;
      }
 }
 
-.m-social {
-    font-size: 18px;
- margin-bottom: 0;
+.memu-mail {
+    font-size: 24px;
+    line-height: calc(28/24);
+    color: rgba(117, 117, 117, 1);
+    
+
+    transition: color $animation;
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
 }
 
-.mobile-social-list{
+.m-social {  
+    font-size: 16px;
+    line-height: calc(22/16);
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.mobile-social-list {
     display: flex;
-    margin-top: 48px;
+    align-content: flex-end;
+   
 }
 
-.mobile-social-item {   
-           
-            margin-right: 20px;
-       
-    font-size: 18px;
-    line-height: calc(22/18);
-    padding: 0 10px;   
+.mobile-social-item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33,0.2);
+    
+  }
 
-    &:not(:last-child) {   
-       border-right: 1px solid rgba(33, 33, 33, 0.2);
-        margin-left: 10px;
-    }
+  &:not(first-child) {
+    padding: 0 10px;
+  }
+}
 
+.m-link {
+    color: rgba(117, 117, 117, 1);
+   
 }
 
 
