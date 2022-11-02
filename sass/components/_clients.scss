@@ -24,15 +24,16 @@
 }
 
 .clients__list {
-    flex-direction: row;
+    display: flex;
+    // flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    // gap: 30px;
+    gap: 30px;
     
 }
 
 .clients__item {
-    flex-basis: calc((100% - 30px) /2);
+    flex-basis: calc((100% - 30px) / 2);
     gap: 30px;
 
     @media screen and(min-width: 768px) {
