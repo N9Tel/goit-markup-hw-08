@@ -2,6 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+   
     margin: 0;
     padding: 10px 28px;
     cursor: pointer;
@@ -19,6 +20,15 @@
 
     transition: border-color $animation;
 
+    @media screen and(min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        @media screen and(min-width: 1200px) {
+            display: flex;
+            margin-left: 12px;
+        }
 
     &:hover,
     &:focus {
@@ -26,15 +36,7 @@
     }
 
 
-    @media screen and(min-width: 768px) {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and(min-width: 1200px) {
-        display: flex;
-        margin-left: 12px;
-    }
+   
 }
 
 .icon-subscribe {
