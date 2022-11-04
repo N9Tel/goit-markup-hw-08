@@ -29,19 +29,21 @@
     background-color: #FFFFFF;
     border-radius: 4px;
     box-shadow: $box-shadow;
+
+    @media screen and (min-width: 480px) {    
+                width: 450px;
+                height: 609px;
+            
+    }
+
+        @media screen and(min-width: 1200px) {     
+                 width: 528px;
+                 height: 581px;
+            
+    
+        }
 }
  
-   @media screen and (min-width: 480px) {
-       .modal {
-           width: 450px;
-           height: 609px;
-       }
-   }
+   
 
-    @media screen and(min-width: 1200px) {
-        .modal {
-          width: 528px;
-          height: 581px;
-        }
-       
-    }
+   
