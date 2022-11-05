@@ -375,7 +375,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .header {
-    min-height: 80px;
+    height: 80px;
   }
 }
 
@@ -412,7 +412,9 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .header-menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -647,6 +649,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .nav-list {
@@ -656,6 +659,11 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-top: 32px;
   }
 }
 
@@ -718,9 +726,6 @@ ul {
     padding-bottom: 32px;
   }
 }
-.list-contacts {
-  outline: 1px solid red;
-}
 @media screen and (min-width: 480px) {
   .list-contacts {
     display: none;
@@ -735,7 +740,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 116px;
+    width: 138px;
     margin-right: 0;
   }
 }
@@ -751,7 +756,7 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 50px;
+    gap: 30px;
   }
 }
 
@@ -763,11 +768,13 @@ ul {
     margin-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts:last-child {
     margin-bottom: 0;
   }
 }
+
 @media screen and (max-width: 767px) {
   .contacts:not(:last-child) {
     margin-bottom: 32px;
@@ -778,6 +785,7 @@ ul {
     margin-right: 30px;
   }
 }
+
 .link-mail,
 .link-tel {
   color: #757575;
@@ -1401,9 +1409,6 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .flex-container-f {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1200px;
@@ -1479,6 +1484,7 @@ address {
 .social {
   outline: 1px solid red;
   text-align: center;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .social {
@@ -1504,7 +1510,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .social-title {
-    margin-left: 70px;
+    margin-left: 40px;
   }
 }
 
@@ -2007,7 +2013,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .header {
-    min-height: 80px;
+    height: 80px;
   }
 }
 
@@ -2044,7 +2050,9 @@ address {
 }
 @media screen and (min-width: 768px) {
   .header-menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2118,6 +2126,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .nav-list {
@@ -2127,6 +2136,11 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-top: 32px;
   }
 }
 
@@ -2189,9 +2203,6 @@ address {
     padding-bottom: 32px;
   }
 }
-.list-contacts {
-  outline: 1px solid red;
-}
 @media screen and (min-width: 480px) {
   .list-contacts {
     display: none;
@@ -2206,7 +2217,7 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 116px;
+    width: 138px;
     margin-right: 0;
   }
 }
@@ -2222,7 +2233,7 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 50px;
+    gap: 30px;
   }
 }
 
@@ -2234,11 +2245,13 @@ address {
     margin-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts:last-child {
     margin-bottom: 0;
   }
 }
+
 @media screen and (max-width: 767px) {
   .contacts:not(:last-child) {
     margin-bottom: 32px;
@@ -2249,6 +2262,7 @@ address {
     margin-right: 30px;
   }
 }
+
 .link-mail,
 .link-tel {
   color: #757575;
@@ -2503,9 +2517,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .flex-container-f {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1200px;
@@ -2581,6 +2592,7 @@ address {
 .social {
   outline: 1px solid red;
   text-align: center;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .social {
@@ -2606,7 +2618,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .social-title {
-    margin-left: 70px;
+    margin-left: 40px;
   }
 }
 
