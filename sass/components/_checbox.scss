@@ -25,7 +25,7 @@
 
 .check-label {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 
@@ -33,7 +33,7 @@
     display: flex;
     width: 16px;
     height: 15px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: -12px;
     background-image: url('../images/unchecked.svg');
 }
@@ -42,6 +42,7 @@
     margin: 0;
     margin-left: 9px;
     display: flex;
+    
     user-select: none;
 }
 
@@ -52,6 +53,7 @@
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.03em;
+    text-decoration: underline;
     
     color: rgba(117, 117, 117, 1);
 
@@ -70,9 +72,9 @@
     }
 }
 
-@media screen and(min-width: 1200px) {
-    .form-link {
-        font-size: 14px;
-        line-height: calc(24/14);
-    }
-}
+// @media screen and(min-width: 1200px) {
+//     .form-link {
+//         font-size: 14px;
+//         line-height: calc(24/14);
+//     }
+// }
