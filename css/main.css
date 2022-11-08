@@ -769,6 +769,7 @@ ul {
             flex-direction: column;
     width: 138px;
     margin-right: 0;
+    margin-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2258,6 +2259,7 @@ address {
             flex-direction: column;
     width: 138px;
     margin-right: 0;
+    margin-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {

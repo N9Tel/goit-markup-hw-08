@@ -9,7 +9,7 @@
              flex-direction: column;
             width: 138px;
             margin-right: 0;
-            // margin-top: 21px;
+             margin-top: 21px;
          }
 
                  @media screen and(min-width: 1200px) {
@@ -63,6 +63,7 @@
          letter-spacing: 0.02em;
          text-decoration: none;
          display: none;
+
          transition: color $animation;
     }
 
