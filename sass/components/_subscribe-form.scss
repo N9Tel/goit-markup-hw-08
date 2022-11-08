@@ -1,7 +1,7 @@
 .flex-container-subscribe {
-    outline: 1px solid red;
+    
     margin: 0 auto;
-    width: 100%;
+     width: 100%;
     
 
 @media screen and (min-width: 1200px) {
@@ -50,11 +50,9 @@
 
 
 .subscribe-field {
-    display: flex;
-    max-width: 100%;
+    // display: flex;
+     width: 290px;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
     padding: 15px 16px;  
 
@@ -68,6 +66,10 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: border-color $animation;
+
+    @media screen and(min-width: 480px) {
+        width: 450px;
+    }
 
 @media screen and(min-width: 768px) {
             width: 450px;
