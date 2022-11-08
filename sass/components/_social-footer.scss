@@ -10,7 +10,7 @@
 
         @media screen and (min-width: 1200px) {   
                 text-align: left;
-            
+                // margin-left: 70px;
         }
 }
    .social-title {
@@ -25,16 +25,11 @@
     margin-bottom: 20px;
 
     @media screen and(min-width: 1200px) {
-                margin-left: 40px;
+                margin-left: 70px;
             
     }
     
 }
-
-
-
-
-
 
 
 .social-list {
@@ -47,6 +42,7 @@
 
     @media screen and(min-width: 1200px) {
        margin-left: 70px;
+       
     }
 }
 

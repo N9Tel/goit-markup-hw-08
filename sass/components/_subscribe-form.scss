@@ -1,17 +1,12 @@
-.flex-container-subscribe {
-    
+.flex-container-subscribe {   
     margin: 0 auto;
      width: 100%;
     
 
-@media screen and (min-width: 1200px) {
-            margin-left: 0;
+ @media screen and (min-width: 1200px) {
+            margin-left: auto;
             margin-right: 0;
             text-align: left;
-            
-            
-           
-       
     }
     
 }
@@ -40,13 +35,11 @@
         flex-direction: column;
 
         @media screen and (min-width: 1200px) {
-                    flex-wrap: nowrap;
-                }
+             display: flex;       
+            flex-wrap: nowrap;
+        }
            
 }
-
-
-
 
 
 .subscribe-field {
@@ -78,9 +71,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-           width: 358px;
+           display: block;
+        width: 358px;
             margin-right: 12px;
-            margin-left: 0;
+            margin-left: -50px;
             margin-bottom: 0;
         
     }
