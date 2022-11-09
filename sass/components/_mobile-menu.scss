@@ -32,8 +32,8 @@
 
 .menu-toggle {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 10px;
+    right: 15px;
     border: none;
     background-color: transparent;
 
@@ -70,6 +70,11 @@
     display: block;
     color: rgba(33, 33, 33, 1);
     cursor: pointer;
+
+&.current-mobile {
+   color: $accent-color;
+}
+
     
      
     transition: color $animation;
@@ -89,9 +94,16 @@
 }
 
 .menu-tel {
-    font-size: 34px;
-    line-height: calc(40/34);
-    color: rgba(117, 117, 117, 1);
+    font-size: 30px;
+    line-height: calc(40/30);
+    color: $accent-color;
+    margin-bottom: 20px;
+    display: block;
+
+    @media screen and(min-width: 400px){
+        font-size: 34px;
+        margin-bottom: 32px;
+    }
 
      transition: color $animation;
 
@@ -148,8 +160,11 @@
 }
 
 .m-link {
-    color: rgba(117, 117, 117, 1);
+    color: $accent-color;
    
+    @media screen and(min-width: 400px) {
+            font-size: 18px;
+        }
 }
 
 
