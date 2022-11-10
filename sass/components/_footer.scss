@@ -1,17 +1,15 @@
 .footer {
     padding-top: 60px;
-    padding-bottom: 60px;  
-    
+    padding-bottom: 60px;
+
     & .container {
-        @media screen and(min-width: 768px){
-            justify-content: space-around;
+        @media screen and(min-width: 768px) {
+            //   justify-content: space-around;
         }
 
-                @media screen and(min-width: 1200px) {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                }
+        @media screen and(min-width: 1200px) {
+            display: flex;
+        }
     }
 }
 
@@ -23,7 +21,8 @@
 
     @media screen and(min-width: 768px) {
         flex-direction: row;
-        justify-content: space-around;
+           justify-content: space-around;
+         
     }
 
     @media screen and(min-width: 1200px) {
@@ -41,39 +40,36 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 24px;
-    line-height: calc(28/24);
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: $text-color;
     text-decoration: none;
     margin-bottom: 20px;
     display: block;
+    transition: color $animation;
 
-    transition: color $animation;  
-      
     @media screen and(min-width: 1200px) {
-            font-size: 26px;
-            line-height: calc(30/26);
-    
-        }
-    
+        font-size: 26px;
+        line-height: calc(30 / 26);
+    }
 }
 
 
 .footer-contacts {
     text-align: center;
     margin-bottom: 60px;
+    
 
     @media screen and(min-width: 768px) {
         margin-bottom: 0;
+        margin-right: 120px;
     }
 
-    @media screen and (min-width: 1200px) {        
-                text-align: left;
-                margin-bottom: 0;
-                margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 70px;
     }
-        
-
 }
 
 
@@ -104,8 +100,7 @@ address {
     color: $add-color;
     text-decoration: none;
     font-size: 14px;
-    line-height: calc(24/14);
-
+    line-height: calc(24 / 14);
     transition: color $animation;
 
     &:hover,
@@ -115,12 +110,15 @@ address {
 }
 
 .footer-wrapper {
-    @media screen and(min-width: 768px) 
-    and(max-width: 1199px){
+    @media screen and(min-width: 768px) {
         display: flex;
-        justify-content: space-around;
+        align-items: baseline;
+          justify-content: space-around;
         margin-bottom: 60px;
+    }
 
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 0;
     }
 }
 

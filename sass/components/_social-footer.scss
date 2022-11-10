@@ -1,41 +1,29 @@
-.social {     
-    
+.social {
     text-align: center;
     padding: 0;
 
     @media screen and (max-width: 767px) {
-            margin-bottom: 60px;
+        margin-bottom: 60px;
         
     }
 
-        @media screen and (min-width: 768px) {
-            margin-left: 191px;
-    
-        }
-
-        @media screen and (min-width: 1200px) {   
-                text-align: left;
-                
-                
-        }
-}
-   .social-title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-    @media screen and(min-width: 1200px) {
-                margin-left: 70px;
-            
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-left: 0;
     }
-    
 }
+
+ .social-title {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: calc(30 / 16);
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     margin: 0;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20px;
+ }
 
 
 .social-list {
@@ -45,11 +33,6 @@
     gap: 10px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and(min-width: 1200px) {
-       margin-left: 70px;
-       
-    }
 }
 
 .social-link-f {
@@ -62,12 +45,10 @@
     border-radius: 50%;
     display: flex;
     fill: $text-color;
-
     transition: background-color $animation;
 
     &:hover,
     &:focus {
         background-color: $accent-color;
     }
-
 }
