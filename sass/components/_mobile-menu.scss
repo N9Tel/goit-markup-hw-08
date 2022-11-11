@@ -12,6 +12,7 @@
     transform: translateX(100%);
     transition: transform 400ms;
     padding: 48px 25px;
+    overflow: scroll;
 
     @media screen and(min-width: 480px){
         padding: 48px 40px;

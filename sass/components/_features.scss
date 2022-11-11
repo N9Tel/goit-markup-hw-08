@@ -16,16 +16,16 @@
    
 }
 
-.section__item:not(:nth-last-child) {
-      margin-bottom: 30px;
-    }
+// .section__item:not(:nth-last-child) {
+//       margin-bottom: 30px;
+//     }
 
-.section__item :not(:nth-last-child) {
+// .section__item :not(:nth-last-child) {
      
-    @media screen and(min-width:1200px) {
-        margin-right: 30px;
-    }
-}
+//     @media screen and(min-width:1200px) {
+//         margin-right: 30px;
+//     }
+// }
 
 @media screen and(min-width: 480px) {
     .section__item {
@@ -111,5 +111,5 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
      margin-top: 10px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }

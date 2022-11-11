@@ -20,8 +20,8 @@
     justify-content: center;
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
+    font-size: 14px;
+    line-height: calc(17/14);
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -31,10 +31,7 @@
 
 }
 
-.subscribe-form {
-    // display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
+.subscribe-form {  
 
         @media screen and (min-width: 1200px) {
              display: flex;       
@@ -45,7 +42,7 @@
 
 
 .subscribe-field {
-    // display: flex;
+    
      width: 290px;
     height: 50px;
     margin-bottom: 20px;
