@@ -1,14 +1,25 @@
 .buttons {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 40px;
     padding: 0;
-    gap: 8px;
+     gap: 8px;
+     max-width: 450px;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 36px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+        @media screen and(min-width: 1200px) {
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+    
 }
 
-.buttons .c-buttons:last-child {
-    margin-right: 0px;
-}
+
 
 
 .c-button {
@@ -26,6 +37,8 @@
     border: 1px solid transparent;
 
     transition: $animation;
+
+    
 
 }
 
